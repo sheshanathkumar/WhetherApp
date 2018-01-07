@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11DFFA"
+    tools:context="com.example.sk.whetherapp.MainActivity">
+
+    <TextView
+        android:id="@+id/cityText"
+        android:text = "Patna, BH"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginLeft="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="16dp"
+        android:src="@android:drawable/screen_background_dark" />
+
+    <TextView
+        android:id="@+id/tempratureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 Deg C"
+        android:textSize="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="180dp" />
+
+    <TextView
+        android:id="@+id/windText"
+        android:text="Wind :"
+        android:textColor="#010102"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:text="Humidity :"
+        android:textColor="#010102"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/windText"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pressureText"
+        android:text="Pressure :"
+        android:textColor="#010102"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/humidityText"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/conditionText"
+        android:text="Condition"
+        android:textColor="#010102"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/pressureText"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/sunriseText"
+        android:text="Sunrise :"
+        android:textColor="#010102"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/conditionText"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/sunsetText"
+        android:text="Sunset :"
+        android:textColor="#010102"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/sunriseText"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lastUpdateText"
+        android:textSize="20dp"
+        android:text="Last Update"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sunsetText"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#080808" />
+
+
+</RelativeLayout>
